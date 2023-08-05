@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTITA</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/graduate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <a href="#header"><img class="toTopBut" src="./img/arrow.png" alt="ToTopButton"></a>
+
+
+    <header id="header">
+      <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
+        <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
+        <div class="main-words d-flex">
+            <a href="index.html"><p class="mg lang" id="golovna">Головна</p></a>
+            <p data-bs-toggle="modal" data-bs-target="#acadModal" id="about" class="lang mg searchWord">Про академію</p>
+            <a class="mg main-word"><p class="lang" id="graduates">Випускники</p></a>
+            <a class="mg" href="index.html#student"><p class="lang" id="students">Студенти</p></a>
+            <a class="mg" href="index.html#Contacts"><p class="lang" id="contacts">Контакти</p></a>
+          </div>
+          <div class="d-flex lang-and-search">
+            <div class="dropdown">
+                <button class="btn-lang mg" data-bs-toggle="dropdown">
+                  <img id="Flag" src="./img/UAflag.png" alt="uaFlag">
+                  <img src="./img/langArrow.png" alt="langArrow">
+                </button>
+                <ul class="dropdown-menu dropdown-lang langChoose">
+                  <li onclick="setLang('ua')"><a class="dropdown-item" href="#"><img width="31px" height="22px" src="./img/UAflag.jpg" alt="UAflag"></a></li>
+                  <li onclick="setLang('en')"><a class="dropdown-item usLang mt-2" href="#"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
+                </ul>
+              </div>
+              <button class="btn btn-primary btn-img" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
+              </button>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body d-flex justify-content-center">
+                    <input onkeypress="search()" id="input" class="inputSearch" type="text">
+                <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="modal fade" id="acadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex justify-content-center">
+          <div class="modal-content cont">
+            <div class="acad-head modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body acad-body">
+              <h1 class="title-acad mt-2">Про академію</h1>
+              <div class="mt-5 d-flex justify-content-around">
+                <img src="./img/acad.png" alt="">
+                <div class="acad-text mt-5">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main>
+        <div class="hackerInfo">
+            <div class="d-flex justify-content-center">
+                <div class="forBorder">
+                    <div class="d-flex justify-content-around">
+                        <div class="hacker-text mt-3">
+                            <h1 class="change" id="name">Name</h1>
+                            <div class="hacker-description mt-5">
+                                <p class="change" id="desc1">desc</p>
+                                <p class="change" id="desc2">desc</p>
+                                <p class="change" id="desc3">desc</p>
+                            </div>
+                            <div class="socials-hacker d-flex mt-4">
+                                <img class="soc" id="insta" src="./img/instagram-hacker.png" alt="instagram">
+                                <img class="soc" id="tiktok" src="./img/tiktok-hacker.png" alt="tiktok">
+                                <img class="soc" id="discord" src="./img/discord-hacker.png" alt="discord">
+                                <img class="soc" id="face" src="./img/facebook-hacker.png" alt="facebook">
+                                <img class="soc" id="twitt" src="./img/twitter-hacker.png" alt="twitter">
+                                <img class="soc" id="telegram" src="./img/telegram-hacker.png" alt="telegram">
+                            </div>
+                        </div>
+                        <img id="gradImg" src="" alt="student">
+                    </div>
+                    <div class="firstColumn d-flex">
+                        <div class="firstColumn-container1 d-flex flex-column justify-content-center">
+                            <h2 class="lang" id="groupa">Група:</h2>
+                            <p class="change" id="group">group</p>
+                        </div>
+                        <div class="firstColumn-container2 d-flex justify-content-center align-items-center">
+                            <button class="diplomas d-flex justify-content-around align-items-center">
+                                <p class="mt-3 lang" id="diplomas">Дипломи/Сертифікати</p>
+                                <img src="./img/arrow-short-right3.png" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="secondColumn d-flex">
+                        <div class="secondColumn-container1 d-flex flex-column justify-content-center">
+                            <h2 class="lang" id="work">Місце роботи</h2>
+                        </div>
+                        <div class="secondColumn-container2 d-flex justify-content-center align-items-center">
+                            <h2 class="lang" id="data">Дата завершення навчання</h2>
+                        </div>
+                    </div>
+                    <div class="thirdColumn d-flex">
+                        <div class="thirdColumn-container1 workplace d-flex flex-column justify-content-center align-items-center">
+                            <p class="change" id="workplace">workplace</p>
+                        </div>
+                        <div class="thirdColumn-container2 d-flex justify-content-center align-items-center">
+                            <p class="change" id="date">date</p>
+                        </div>
+                    </div>
+                    <div class="secondColumn d-flex">
+                        <div class="secondColumn-container1 d-flex flex-column justify-content-center">
+                            <h2 class="lang" id="feedback">Відгук про навчання</h2>
+                        </div>
+                        <div class="secondColumn-container2 d-flex justify-content-center align-items-center">
+                            <h2 class="lang" id="creed">Кредо</h2>
+                        </div>
+                    </div>
+                    <div class="thirdColumn d-flex">
+                        <div class="thirdColumn-container1 d-flex flex-column justify-content-center align-items-center">
+                            <p class="change" id="feedback">feedback</p>
+                        </div>
+                        <div class="thirdColumn-container2 d-flex justify-content-center align-items-center">
+                            <p class="change" id="credo">credo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="first_part">
+            <br>
+            <h1 class="zahodi lang" id="event">Заходи академії з участю студента</h1>
+          <div class="d-flex first_main_part justify-content-between">
+            <div class="slider">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/slide.png" alt="slide">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/Slide2.png" alt="slide">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide3.png" alt="slide">
+                  </div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                </div>
+              </div>
+            
+
+              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  effect: "cards",
+                  grabCursor: true,
+                });
+              </script>
+            </div>
+            <img onclick="localStorage.setItem('event','prof');window.location.href='event.html'" class="more_btn" src="./img/More.png" alt="moreBtn">
+            <div class="slider_text">
+              <h1>Презентація онлайн платформи INTITA.COM </h1>
+              <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+            </div>
+            </div>
+            </div>
+    </main>
+
+    <footer class="d-flex justify-content-between" id="footer">
+        <div class="d-flex">
+          <div class="mt-4 logo-div">
+            <a href="index.html"><img class="logo-footer" src="./img/LOGO_footer.png" alt="logo-footer"></a>
+          </div>
+          <div class="d-flex flex-column nav-footer">
+            <div class="d-flex nav-div">
+            <a href="index.html"><p class="footer-text lang" id="golovna">Головна</p></a>
+              <a href="index.html#graduate"><p class="main-footer lang" id="graduates">Випускники</p></a>
+              <a href="index.html#student"><p class="footer-text lang" id="students">Студенти</p></a>
+              <a href="index.html#Contacts"><p class="footer-text lang" id="contacts">Контакти</p></a>
+            </div>
+            <button onclick="window.location.href = 'https://goo.gl/maps/2vRPS4F7GqXmL1eR9'" onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
+              <p class="location-text lang" id="locationText">Локація</p>
+              <img id="location-arrow" src="./img/location-arrow.png" alt="location-arrow">
+            </button>
+          </div>
+        </div>
+        <div class="soc-div">
+          <div class="socials">
+            <img onclick="window.location.href = 'https://www.instagram.com/intitaedu/'" src="./img/instagram_black.png" alt="instagram-link">
+          <img onclick="window.location.href = 'https://www.facebook.com/intita.it'" src="./img/facebook_black.png" alt="facebook-link">
+          <img onclick="window.location.href = 'https://t.me/IT_Academy_Vinnytsia'" src="./img/telegram_black.png" alt="telegram-link">
+          <img onclick="window.location.href = 'https://twitter.com/INTITA_EDU'" src="./img/twitter_black.png" alt="twitter-link">
+          </div>
+          <div class="d-flex">
+            <div class="d-flex align-items-center justify-content-center mobile-num">
+            <a href="tel:+38 067 431 74 24"><p class="mobileNum-text">+38 067 431 74 24</p></a>
+            </div>
+            <div class="email-div">
+             <a href="mailto:intitavn@gmail.com"><p class="email-text lang" id="email">пошта: intitavn@gmail.com</p></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+<script>
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+
+        console.log("mobile device");
+        window.location.href = "./graduate-page-mobile.html"
+      }else{
+
+        console.log("not mobile device");
+      }
+</script>
+
+
+
+
+<script type="module" src="./js/changeGrad.js"></script>
+<script src="./js/graduate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+@font-face {
+    font-family: Monts;
+    src: url("../fonts/Monserrat/Montserrat-Regular.ttf");
+}
+
+@font-face{
+  font-family: Nova;
+  src: url("../fonts/NovaSquare/NovaSquare.ttf");
+}
+
+@font-face {
+    font-family: Monts-med;
+    src: url("../fonts/Monserrat/Montserrat-Medium.ttf");
+  }
+
+body{
+    background: #FBFCFF;
+}
+
+
+.to-top-but{
+    background: none;
+    border: none;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 99;
+}
+
+.menu{
+    width: 38px;
+    height: 18px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.menu-but{
+    background: none;
+    border: none;
+}
+
+.modal-header{
+    border: none;
+}
+
+.modal-content{
+    background: #E4EAFF;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-family: Monts;
+}
+
+.logo{
+    width: 110px;
+    height: 47px;
+    margin-left: 30px;
+}
+
+.logo-modal{
+    width: 132px;
+    height: 62px;
+}
+
+.lang-but{
+    gap: 20px;
+}
+
+.ua-but{
+    width: 60px;
+    height: 31px;
+    background: #30CFD0;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px #C2E9FB solid;
+}
+
+.en-but{
+    width: 60px;
+    height: 31px;
+    background: none;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px #C2E9FB solid;
+}
+
+.modal-hr{
+    width: 100%;
+    height: 2px;
+    border: none;
+    background: #A1C4FD;
+}
+
+.modal-links a{
+    color: black;
+}
+
+
+
+.main-header{
+    color: #30CFD0 !important;
+}
+
+.modal-links{
+    font-size: 18px;
+}
+
+.modal-socials{
+    gap: 9px;
+    margin-top: 64px;
+}
+
+.login-but{
+    font-size: 18px;
+    border: none;
+    background: none;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hacker-text img{
+    width: 293px;
+    height: 341px;
+}
+
+.for-border{
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 85%;
+}
+
+main{
+    margin-top: 73px;
+}
+
+.hacker-text h1{
+    font-family: Monts-med;
+    font-size: 20px;
+    background: -webkit-linear-gradient(right,#30CFD0, #330867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.hacker-text p{
+    font-family: Monts;
+}
+
+.hacker-description p{
+    width: 90%;
+    margin-left: 10px;
+}
+
+.hacker-socials{
+    gap: 24px;
+    margin-left: 7px;
+}
+
+.hacker-socials img{
+    width: 28px;
+    height: 28px;
+}
+
+.hacker h2{
+    font-family: Monts-Med;
+    font-size: 20px;
+}
+
+.column{
+    border-top: 1px black solid;
+}
+
+.column p{
+    font-family: Monts;
+}
+
+.firstColumn{
+    text-align: center;
+}
+
+.diplomas{
+    width: 288px;
+    height: 49px;
+    border: none;
+    border-radius: 10px;
+    background: #111524;
+    color: #30CFD0;
+    font-family: Monts-Med;
+}
+
+.feedback{
+    text-align: left;
+    width: 90%;
+}
+
+.events h1{
+    font-size: 24px;
+    font-family: Nova;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.events{
+    font-family: Monts;
+    background: #E3F6F6;
+    width: 100%;
+    height: 491px;
+    margin-top: 75px;
+}
+
+.events h2{
+    font-size: 20px;
+    color: #30CFD0;
+}
+
+.events p{
+    text-align: left;
+}
+
+.events_text{
+    margin-left: 30px;
+    width: 85%;
+}
+
+.more-but-events{
+    position: absolute;
+    z-index: 99;
+    left: 260px;
+    margin-top: 140px;
+}
+
+.swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    width: 294px;
+    height: 186px !important;   
+  }
+
+  .swiper-slide img{
+    width: 100%;
+    height: 186px;
+  }
+
+  .swiper-3d .swiper-wrapper {
+    height: 186px;
+}
+
+.swiper-cards {
+    height: 186px;
+}
+
+footer{
+    background: #111524;
+    margin-top: 96px;
+    font-family: Monts;
+}
+
+footer hr{
+    width: 50%;
+    height: 3px;
+    border: none;
+    background: #D7E1E1;
+}
+
+.logo-footer{
+    margin-right: 40px;
+}
+
+.footer-links{
+    font-size: 14px;
+    gap: 12px;
+}
+
+.main-footer{
+    color: #30CFD0;
+}
+
+.loc-but{
+    background: #30CFD0;
+    width: 299px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.socials{
+    gap: 10px;
+}
+
+.connections{
+    color: white;
+    font-size: 14px;
+}
+
+.connections p{
+    margin: 0px 0px 10px;
+}
+
+.connections p:last-child{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none !important;
+    color: white;
+}

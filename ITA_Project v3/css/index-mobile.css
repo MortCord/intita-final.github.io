@@ -1,0 +1,548 @@
+@font-face {
+    font-family: Monts;
+    src: url("../fonts/Monserrat/Montserrat-Regular.ttf");
+}
+
+@font-face{
+  font-family: Nova;
+  src: url("../fonts/NovaSquare/NovaSquare.ttf");
+}
+
+body{
+    background: #FBFCFF;
+}
+
+
+.to-top-but{
+    background: none;
+    border: none;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 99;
+}
+
+.menu{
+    width: 38px;
+    height: 18px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.menu-but{
+    background: none;
+    border: none;
+}
+
+.modal-header{
+    border: none;
+}
+
+.modal-content{
+    background: #E4EAFF;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-family: Monts;
+}
+
+.logo{
+    width: 110px;
+    height: 47px;
+    margin-left: 30px;
+}
+
+.logo-modal{
+    width: 132px;
+    height: 62px;
+}
+
+.lang-but{
+    gap: 20px;
+}
+
+.ua-but{
+    width: 60px;
+    height: 31px;
+    background: #30CFD0;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px #C2E9FB solid;
+}
+
+.en-but{
+    width: 60px;
+    height: 31px;
+    background: none;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px #C2E9FB solid;
+}
+
+.modal-hr{
+    width: 100%;
+    height: 2px;
+    border: none;
+    background: #A1C4FD;
+}
+
+.modal-links a{
+    color: black;
+}
+
+.modal-links p:first-child{
+    color: #30CFD0;
+}
+
+.modal-links{
+    font-size: 18px;
+}
+
+.modal-socials{
+    gap: 9px;
+    margin-top: 64px;
+}
+
+.login-but{
+    font-size: 18px;
+    border: none;
+    background: none;
+    gap: 10px;
+}
+
+
+
+.first-info h1{
+    font-family: Nova;
+    text-align: center;
+    font-size: 32px;
+}
+
+.first-info p{
+    font-family: Monts;
+    text-align: center;
+    white-space: pre-line;
+}
+
+
+.to-call{
+    width: 300px;
+    height: 43px;
+    background: #111524;
+    color: #30CFD0;
+    font-family: Monts;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -2px -2px 30px 4px rgba(48, 207, 208, 0.5);
+}
+
+.events h1{
+    font-size: 24px;
+    font-family: Nova;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.events{
+    font-family: Monts;
+    background: #E3F6F6;
+    width: 100%;
+    height: 491px;
+    margin-top: 96px;
+}
+
+.eventSwiper {
+    width: 240px;
+    height: 320px;
+  }
+
+.event-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    width: 294px;
+    height: 186px !important;   
+  }
+
+  .event-slide img{
+    width: 100%;
+    height: 186px;
+  }
+
+    .event-wrapper {
+    height: 186px;
+}
+
+.swiper-cards {
+    height: 186px;
+}
+
+.events h2{
+    font-size: 20px;
+    color: #30CFD0;
+}
+
+.events p{
+    text-align: left;
+}
+
+.events_text{
+    margin-left: 30px;
+    width: 85%;
+}
+
+.more-but-events{
+    position: absolute;
+    z-index: 99;
+    left: 260px;
+    top: 900px;
+}
+
+
+#call-us{
+    margin-top: 96px;
+}
+
+.backgroundImg{
+    background-image: url(../img/decoration-call-mob.png);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.call-form{
+    background: rgba(255, 255, 255, 0.80);
+    width: 95%;
+    border-radius: 10px;
+}
+
+.call-form h1{
+    font-size: 24px;
+    font-family: Monts;
+    text-align: center;
+    color: #30CFD0;
+}
+
+.input-call input{
+    width: 90%;
+    height: 22px;
+    background: none;
+    border: none;
+    border-bottom: 2px black solid;
+    font-family: Monts;
+}
+
+.input-call{
+    gap: 24px;
+}
+
+.time-call{
+    font-family: Monts;
+    width: 90%;
+    height: 40px;
+    background: #C1F8F8;
+    border-radius: 10px;
+}
+
+.time-call button{
+    width: 23%;
+    height: 24px;
+    border: none;
+    background: #111524;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.time-call p{
+    font-size: 12px;
+}
+
+.time-menu{
+    min-width: 52px;
+    background: #C1F8F8;
+}
+
+.send-time{
+    width: 90%;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    border: 2px black solid;
+    font-family: Monts;
+}
+
+
+#graduate{
+    margin-top: 96px;
+}
+
+#graduate h1{
+    font-size: 24px;
+    font-family: Nova;
+    margin-left: 10px;
+}
+
+.grad-slide{
+    background: #fffcfc;
+    font-family: Monts;
+    border-radius: 10px;
+}
+
+.grad-slide h2{
+    font-size: 20px;
+    color: #30CFD0;
+    margin-left: 24px;
+}
+
+.grad-slide p{
+    margin-left: 24px;
+    width: 70%;
+}
+
+.grad-slide button{
+    width: 140px;
+    height: 40px;
+    background: none;
+    border: 1px black solid;
+    border-radius: 10px;
+    color: #30CFD0;
+    margin-left: 24px;
+}
+
+
+
+footer{
+    background: #111524;
+    margin-top: 96px;
+    font-family: Monts;
+}
+
+footer hr{
+    width: 50%;
+    height: 3px;
+    border: none;
+    background: #D7E1E1;
+}
+
+.logo-footer{
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links{
+    font-size: 14px;
+    gap: 12px;
+}
+
+.main-footer{
+    color: #30CFD0;
+}
+
+.loc-but{
+    background: #30CFD0;
+    width: 299px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.socials{
+    gap: 10px;
+}
+
+.connections{
+    color: white;
+    font-size: 14px;
+}
+
+.connections p{
+    margin: 0px 0px 10px;
+}
+
+.connections p:last-child{
+    text-decoration: underline;
+}
+
+#call-us input::placeholder{
+    padding-left: 10px;
+}
+
+.hackerH1{
+    font-size: 24px;
+    font-family: Nova;
+    display: flex;
+    justify-content: end;
+}
+
+.hackerH1{
+    margin-right: 10px;
+}
+
+#hacker{
+    margin-top: 96px;
+}
+
+.hackerSwiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hacker-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.splide__arrows{
+    display: none;
+}
+
+.stud-name{
+    font-size: 24px;
+}
+
+.stud-name h1{
+    width: 50%;
+}
+
+.hackers{
+    font-family: Monts;
+}
+
+.splide-ttb splide-container splide--slide splide--ttb splide--draggable is-active{
+    height: 100%;
+  }
+  .splide__track{
+    height: 100%;
+  }
+  
+  .splide__list{
+    height: 100%;
+  }
+  
+  .splide-container{
+    height: 100%;
+  }
+
+  .hackerSlider{
+    max-height: 600px;
+    width: 90%;
+  }
+
+  .stud-card{
+    font-family: Monts;
+  }
+
+  .stud-card h3{
+    font-size: 24px;
+  }
+
+  .stud-card p,h3{
+    width: 70%;
+    text-align: right;
+    margin-right: 18px;
+  }
+
+
+  .white-back{
+    background: #ecebeb;
+  }
+
+  .stud-btns button{
+    width: 140px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .diplomas-stud{
+    color: #30CFD0;
+    border: 1px #000 solid;
+  }
+
+  .more-stud{
+    border: 1px #30CFD0 solid;
+  }
+
+  .soc-stud button{
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 10px;
+  }
+
+  .nav-stud p{
+    writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg);
+    font-family: Monts;
+    font-size: 12px;
+  }
+
+  .nav-stud p:first-child{
+    color: #30CFD0;
+  }
+
+  .nums{
+    font-size: 16px;
+    font-family: Monts;
+    gap: 10px;
+    margin-right: 30px;
+  }
+  
+  .nums p{
+    cursor: pointer;
+  }
+  
+  .num{
+    color: #30CFD0;
+  }
+
+  .dateWindow{
+    background: #30CFD0;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 16px;
+    gap: 7.7px;
+    display: none;
+  }
+
+  .dateWindow div:first-child{
+    margin-left: 30px;
+  }
+
+  .dateWindow div:last-child{
+    margin-right: 30px;
+  }
+
+  .selNum{
+    color: #fff;
+  }
+
+  .date-container{
+    gap: 5px;
+  }
+
+
+
+
+

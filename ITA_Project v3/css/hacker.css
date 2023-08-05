@@ -1,0 +1,455 @@
+
+
+@font-face {
+  font-family: Monts;
+  src: url("../fonts/Monserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Monts-med;
+  src: url("../fonts/Monserrat/Montserrat-Medium.ttf");
+}
+
+
+@font-face{
+font-family: Nova;
+src: url("../fonts/NovaSquare/NovaSquare.ttf");
+}
+
+body{
+  background-color: #FBFCFF;
+  margin: 0;
+}
+
+.main-head{
+background: -webkit-linear-gradient(left,#30CFD0, #330867);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+
+.toTopBut{
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+}
+
+.menu-words p:hover{
+  color: #30CFD0;
+  cursor: pointer;
+  
+}
+
+.menu-words p{
+  color: #1B1F2F;
+  transition: color 0.2s;
+
+}
+.menu-words{
+  width: 100%; 
+  color: black; 
+  gap: 88px; 
+  font-size: 16px; 
+  font-family: Monts;
+  display: flex;
+  align-items: center;
+}
+
+.main-word{
+  color: #30CFD0 !important;
+}
+
+.mg{
+  margin-top: 30px;
+}
+
+.btn-lang{
+  background: none;
+  border: none;
+  color: #1B1F2F;
+}
+
+ .btn-lang:hover{
+  background: none;
+  color: #1B1F2F;
+  cursor: pointer;
+}
+
+.langChoose{
+  background: #30CFD0;
+}
+
+.dropdown-lang{
+  min-width: 64px; 
+  border-radius: 10px;
+}
+
+.btn-img{
+  background: none;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn-img:hover{
+  background: none;
+  cursor: pointer;
+}
+
+.searchCollapse{
+  position: absolute; 
+}
+
+.inputSearch{
+  width: 866px; 
+  height: 56px; 
+  background-color: #30CFD0; 
+  border-radius: 10px; 
+  border: none; 
+  font-size: 24px;
+}
+
+.collapseSearchIcon{
+  position: absolute; 
+  margin-left: 370px; 
+  margin-top: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.card-body{
+  background: none;
+  border: none;
+}
+
+
+
+main{
+  margin-top: 145px;
+}
+
+
+.hackerInfo h1{
+  font-size: 40px;
+  font-family: Monts-med;
+  background: -webkit-linear-gradient(left,#30CFD0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hackerInfo p{
+  font-family: Monts;
+}
+
+.hackerInfo h2{
+  font-size: 32px;
+  font-family: Monts-med;
+}
+
+.forBorder{
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.hacker-text{
+  width: 40%;
+}
+
+.hacker-description{
+  font-size: 20px;
+  width: 90%;
+}
+
+.socials-hacker{
+  gap: 24px;
+}
+
+.firstColumn p{
+  font-size: 24px;
+}
+
+.firstColumn{
+  border-top: 1px black solid;
+  height: 168px;
+}
+
+.firstColumn-container1{
+  width: 30%;
+  text-align: center;
+  border-right: 1px black solid;
+}
+
+.diplomas{
+  background: #111524;
+  border: 1px #30CFD0 solid;
+  color: #30CFD0;
+  width: 455px;
+  height: 83px;
+  border-radius: 10px;
+}
+
+.firstColumn-container2{
+  width: 70%;
+}
+
+.secondColumn{
+  border-top: 1px black solid;
+  height: 103px;
+}
+
+.secondColumn-container1{
+  width: 50%;
+  text-align: center;
+  border-right: 1px black solid;
+}
+
+.secondColumn-container2{
+  width: 50%;
+}
+
+.thirdColumn{
+  border-top: 1px black solid;
+  height: auto;
+  font-size: 24px;
+}
+
+.thirdColumn-container1{
+  width: 50%;
+  border-right: 1px black solid;
+}
+
+.thirdColumn-container1 p{
+  width: 100%;
+}
+
+.thirdColumn-container2{
+  width: 50%;
+  text-align: center;
+}
+
+.thirdColumn p{
+  margin-top: 20px;
+  width: 80%;
+}
+
+.first_part{
+  font-family: Monts;
+  background: #E3F6F6;
+  width: 100%;
+  margin-top: 208px;
+}
+
+.zahodi{
+  font-family: Nova; 
+  font-size: 48px; 
+  text-align: center; 
+  color: #111524;
+}
+
+.slider{
+  height: 550px;
+  margin-left: 100px;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #E3F6F6;
+  display: flex;
+}
+
+.swiper-slide img {
+  width: 758px;
+  height: 479px;
+}
+
+.swiper h2{
+  color: #30CFD0;
+  font-size: 32px;
+}
+
+.swiper p{
+  font-size: 20px;
+  text-align: left;
+}
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #fff;
+  min-width: 758px;
+  min-height: 479px;
+  background: none;
+  border: none;
+}
+
+.more_btn{
+  position: absolute;
+  margin-left: 733px;
+  margin-top: 400px;
+  z-index: 99;
+}
+
+.slider_text h1{
+  color: #30CFD0;
+}
+
+
+.slider_text{
+  width: 30%;
+  margin-right: 100px;
+}
+
+
+
+footer{
+  background: #111524; 
+  height: 223px; 
+  font-family: Monts; 
+  margin-top: 208px;
+}
+
+.logo-footer{
+  margin-right: 25px;
+}
+
+.nav-footer{
+  font-size: 16px; 
+  margin-top: 60px; 
+  margin-left: 24px;
+}
+
+.nav-div{
+  gap: 12px;
+}
+
+.main-footer{
+  background: -webkit-linear-gradient(left,#30CFD0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.location-but{
+  width: 185px; 
+  height: 37px; 
+  color: white; 
+  border: 2px #30CFD0 solid; 
+  border-radius: 10px;
+  background: none;
+  transition: background-color 0.5s;
+}
+
+.location-but:hover{
+  background: #30CFD0;
+  cursor: pointer;
+}
+
+.location-text{
+  margin-top: 15px;
+}
+
+.soc-div{
+  margin-right: 175px; 
+  margin-top: 74px;
+}
+
+.socials{
+  gap: 12px; 
+  margin-left: 20px;
+}
+
+.mobile-num{
+  width: 180px; 
+  height: 20%; 
+  color: white; 
+  border-right: 2px white solid; 
+  margin-right: 10px;
+}
+
+.mobileNum-text{
+  margin-top: 15px;
+  color: #fff;
+}
+
+.email-div{
+  color: white; 
+  margin-top: 15px; 
+  margin-left: 10px;
+}
+
+.email-text{
+  color: #fff;
+}
+
+
+.footer-text{
+  color: white;
+  transition: color 0.5s;
+}
+
+.footer-text:hover{
+  color: #30CFD0 !important;
+  cursor: pointer;
+}
+
+.main-words{
+  gap: 130px;
+}
+
+.main-word{
+  background: -webkit-linear-gradient(left,#30CFD0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lang-and-search{
+  margin-left: 137px;
+  gap: 40px;
+}
+
+.modal-content{
+  background: none;
+  border: none;
+}
+
+modal-header{
+  border-bottom: none;
+}
+
+
+.cont{
+  border: none;
+  min-width: 1496px;
+  background-color: #DCF2F4;
+}
+
+.title-acad{
+  font-size: 48px;
+  font-family: Nova;
+  text-align: center;
+}
+
+.acad-body p{
+  font-size: 20px;
+  font-family: Monts;
+  width: 80%;
+}
+
+.acad-text{
+  width: 50%;
+}
+
+

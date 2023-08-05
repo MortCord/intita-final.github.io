@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTITA</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <a  href="#header"><img class="toTopBut" src="./img/arrow.png" alt="ToTopButton"></a>
+
+     <header id="header">
+        <div id="menu-words" class="d-flex justify-content-center mt-4 menu-words">
+          <a href="index.html"><img height="62px" width="132px" src="./img/LOGO2.png" alt="INTITA_logo"></a>
+          <div class="main-words d-flex lang">
+              <p id="golovna" class="mg main-word searchWord lang">Головна</p>
+              <p data-bs-toggle="modal" data-bs-target="#acadModal" id="about" class="lang mg searchWord">Про академію</p>
+              <a class="mg searchWord" href="#graduate"><p id="graduates" class="lang">Випускники</p></a>
+              <a class="mg searchWord" href="#student"><p id="students" class="lang">Студенти</p></a>
+              <a class="mg searchWord" href="#Contacts"><p id="contacts" class="lang">Контакти</p></a>
+            </div>
+            <div class="d-flex lang-and-search">
+              <div class="dropdown">
+                  <button class="btn-lang mg" data-bs-toggle="dropdown">
+                    <img id="Flag" src="./img/UAflag.png" alt="uaFlag">
+                    <img src="./img/langArrow.png" alt="langArrow">
+                  </button>
+                  <ul class="dropdown-menu dropdown-lang langChoose">
+                    <li onclick="setLang('ua')"><a class="dropdown-item"><img width="31px" height="22px" src="./img/UAflag.jpg" alt="UAflag"></a></li>
+                    <li onclick="setLang('en')"><a class="dropdown-item usLang mt-2"><img width="31px" height="22px"  src="./img/USflag.png" alt="USflag"></a></li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary btn-img" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img width="24px" height="24px" src="./img/search.png" alt="searchButton">
+                </button>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body d-flex justify-content-center">
+                      <input onkeypress="search()" id="input" class="inputSearch" type="text">
+                  <img class="collapseSearchIcon" width="24px" height="24px" src="./img/search_black.png" alt="collapseSearchIcon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal fade" id="acadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex justify-content-center">
+              <div class="modal-content cont">
+                <div class="acad-head modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body acad-body">
+                  <h1 id="about" class="title-acad mt-2 lang">Про академію</h1>
+                  <div class="mt-5 d-flex justify-content-around">
+                    <img src="./img/acad.png" alt="">
+                    <div class="acad-text mt-5">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="d-flex justify-content-between align-items-center aboutHeader">
+            <div class="aboutContainer">
+                <h1 id="academy" class="lang">ВІННИЦЬКА IT-АКАДЕМІЯ</h1>
+                <h3 id="learn" class="lang">Навчайся разом з нами</h3>
+                <h3 id="reach" class="lang">Досягай професійного успіху - гарантовано!</h3>
+                <div class="d-flex justify-content-between mt-5">
+                    <a href="#Contacts"><button id="toCall" class="toCall lang">Зателефонувати</button></a>
+                </div>
+            </div>
+            <img src="./img/decorations.png" alt="Decorations">
+        </div>
+    </header> 
+
+
+     <main>
+      <div class="first_part">
+        <br>
+        <h1 id="events" class="zahodi lang">Заходи академії</h1>
+        <div class="d-flex first_main_part justify-content-between">
+        <div class="slider">
+          <div class="swiper mySwiper swiper-event">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-event">
+                <img id="eventImg1" src="./img/slide.png" alt="slide">
+              </div>
+              <div class="swiper-slide slide-event">
+                <img id="eventImg2" src="./img/Slide2.png" alt="slide">
+              </div>
+              <div class="swiper-slide slide-event">
+                <img id="eventImg3" src="./img/slide3.png" alt="slide">
+              </div>
+              <div class="swiper-slide slide-event"></div>
+              <div class="swiper-slide slide-event"></div>
+              <div class="swiper-slide slide-event"></div>
+            </div>
+          </div>
+        
+          
+        </div>
+        <button id="sliderMore" onclick="localStorage.setItem('event','prof');window.location.href='event.html'"  class="more_btn d-flex justify-content-around align-items-center">
+          <p  class="mt-3">Більше</p>
+          <img src="./img/arrow-location.png" alt="arrow-img">
+        </button>
+        
+        <div class="slider_text">
+          <h1 id="eventName">ProfIT Day</h1>
+          <p id="eventDesc">- презентації передових компаній<br>
+            - змістовні тренінги та майстер-класи<br>
+            - можливість пройти співбесіду та отримати роботу в ІТ</p>
+        </div>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <div>
+
+        </div>
+        <div class="d-flex">
+          <div id="dateWindow" class="dateWindow mb-3">
+            <div id="num1" onclick="changeEvent(this);" class="date-container d-flex">
+              <span class="selNum">03</span>
+              <span>12</span>
+              <span>21</span>
+            </div>
+            <div id="num2" onclick="changeEvent(this);" class="date-container d-flex">
+              <span class="selNum">12</span>
+              <span>03</span>
+              <span>23</span>
+            </div>
+            <div id="num3" onclick="changeEvent(this);" class="date-container d-flex">
+              <span class="selNum">02</span>
+              <span>08</span>
+              <span>21</span>
+            </div>
+          </div>
+          <div onclick="changeDis();" class="d-flex nums align-items-center">
+            <img class="mb-3" src="./img/arrow-slider.png" alt="arrow">
+            <p id="visNum1" class="num">03</p>
+            <p id="visNum2">12</p>
+            <p id="visNum3">21</p>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+        <div id="student">
+          <div class="studentsH1">
+            <h1 id="studentsText" class="lang">Студенти</h1>
+          </div>
+          <div class="studentSlider-global d-flex justify-content-between mt-5">
+            <div class="group-stud d-flex flex-column">
+              <p>Team Leads</p>
+              <p>Senior</p>
+              <p>Middle</p>
+              <p>Junior</p>
+            </div>
+            <div class="student-slider">
+            <div class="splide-ttb splide-container">    
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Франишина Діана</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>Знайти себе неможливо – себе можна тільки створити.</p>
+                        </div>
+                        <div onclick="setHacker()" class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','diana');window.location.href='hacker-page.html'" id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/diana-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Гавриш Костянтин</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>За ким молодь, за тим і майбутнє.</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','kostya');window.location.href='hacker-page.html'" id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/kostya-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+                  
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Бобрук Тимофій</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>Поки ви лежите на дивані - вони заробляють міліони.</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','tima');window.location.href='hacker-page.html'" id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/tima-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Власко Григорій</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>Краще працювати без визначеної мети, ніж нічого не робити.</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','grisha');window.location.href='hacker-page.html'" id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/grisha-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Ратинський Володимир</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>It's a good life we live. The best, may it never change, and may it never change us</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','vova');window.location.href='hacker-page.html'"  id="moreStudent" class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/vova-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+                  
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Механічева Олександра</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','sasha');window.location.href='hacker-page.html'" id="moreStudent"  class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/sasha-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+                  
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Гурський Даніл</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>Хватит курить где попало, курите там где ище не попало.</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','danil');window.location.href='hacker-page.html'" id="moreStudent"  class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/dania-stud-desc.png" alt="student">
+                    </div>
+                  </li>
+
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Федчишин Єгор</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>Поки ти тримаєшся за свою «стабільність», хтось поруч втілює в життя твої мрії.</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','yehor');window.location.href='hacker-page.html'" id="moreStudent"  class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/yehor-stud-desc.png" alt="student">
+                    </div>
+                  </li>  
+
+                  <li class="splide__slide">
+                    <div class="d-flex justify-content-around">
+                      <div class="studentDesc">
+                        <h1>Кравчук Анастасія</h1>
+                        <div class="mt-5 d-flex flex-row-reverse">
+                        <p>Кращий спосіб почати робити – перестати говорити і почати робити.</p>
+                        </div>
+                        <div class="d-flex student-btns justify-content-end">
+                          <button id="diplomas" class="diploma-btn stud-btn lang">Дипломи</button>
+                          <button onclick="localStorage.setItem('hacker','nastya');window.location.href='hacker-page.html'" id="moreStudent"  class="more-stud-btn stud-btn lang">Більше</button>
+                        </div>
+                      </div>
+                      <img src="./img/nastya-stud-desc.png" alt="student">
+                    </div>
+                  </li>  
+                </ul> 
+              </div>	
+            </div>
+          </div>
+            
+ 
+          </div>
+          <div class="d-flex but-soc-stud">
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+            <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+            <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+            <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+          </div>
+        </div>
+
+          <form id="Contacts" class="d-flex justify-content-between">
+            <img src="./img/decorations-call.png" alt="decorations">
+            <div class="to-call">
+              <h2 class="lang" id="ContactUs">Зв’яжемось з вами</h2>
+              <input id="inputName" type="text" placeholder="Ім’я" required>
+              <br>
+              <input id="inputSurname" class="mt-4" type="text" placeholder="Прізвище" required>
+              <br>
+              <input id="inputPhone" class="mt-4" type="number" placeholder="Номер телефону" required>
+              <div class="choose-time d-flex justify-content-around align-items-center mt-5">
+                <button id="firstTime" data-bs-toggle="dropdown" class="btn-time">9:00</button>
+                <ul class="dropdown-menu dropdown-lang">
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">9:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">10:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">11:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">12:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">13:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">14:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">16:00</a></li>
+                  <li><a onclick="changeFirstTime(this)" class="dropdown-item">17:00</a></li>
+                </ul>
+                <p id="timeCall" class="mt-3 lang">Зручний для вас час</p>
+                <button id="secondTime" data-bs-toggle="dropdown" class="btn-time">9:00</button>
+                <ul class="dropdown-menu dropdown-lang">
+                  <li><a onclick="changeSecondTime(this)" class="dropdown-item">9:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">10:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">11:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">12:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">13:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">14:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">16:00</a></li>
+                  <li><a onclick="changeSecondTime(this)"  class="dropdown-item">17:00</a></li>
+                </ul>
+              </div>
+              <div class="mt-5">
+                <button id="sendCall" class="send-time lang">Надіслати</button>
+              </div>
+            </div>
+          </form> 
+
+          <div id="graduate">
+            <h1 class="lang" id="graduatesText">Випускники</h1>
+            <div class="grad-slider d-flex justify-content-between mt-5">
+              <div class="grads">
+                <div class="swiper mySwiper2 grad">
+                  <div class="swiper-wrapper grad-wrapper">
+                    <div class="swiper-slide grad-slide">
+                      <div class="d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Франишина Діана</h2>
+                          <p>Посада</p>
+
+                          <p>Знайти себе неможливо – себе можна тільки створити.</p>
+                          <button onclick="localStorage.setItem('grad','diana');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/diana-graduate.png" alt="graduate">
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Бобрук Тимофій</h2>
+                          <p>Посада</p>
+                          <p>Поки ви лежите на дивані вони заробляють міліони.</p>
+                          <button onclick="localStorage.setItem('grad','tima');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/tima-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Гавриш Костя</h2>
+                          <p>Посада</p>
+                          <p>За ким молодь, за тим і майбутнє.</p>
+                          <button onclick="localStorage.setItem('grad','kostya');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/kostya-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Гурський Даніл</h2>
+                          <p>Посада</p>
+                          <p>Хватит курить где попало, курите там где ище не попало.</p>
+                          <button onclick="localStorage.setItem('grad','danil');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/danya-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Механічева Олександра</h2>
+                          <p>Посада</p>
+                          <p>І прийде час, коли один скаже: "Слава Україні! ", а мільйони відповідатимуть "Героям слава!"</p>
+                          <button onclick="localStorage.setItem('grad','sasha');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/sasha-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Власко Григорій</h2>
+                          <p>Посада</p>
+                          <p>Краще працювати без визначеної мети, ніж нічого не робити.</p>
+                          <button onclick="localStorage.setItem('grad','grisha');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/grisha-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Федчишин Єгор</h2>
+                          <p>Посада</p>
+                          <p>Поки ти тримаєшся за свою «стабільність», хтось поруч втілює в життя твої мрії.</p>
+                          <button onclick="localStorage.setItem('grad','yehor');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/yehor-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Ратинський Володимир</h2>
+                          <p>Посада</p>
+                          <p>It's a good life we live. The best, may it never change, and may it never change us</p>
+                          <button onclick="localStorage.setItem('grad','vova');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/vova-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                    <div class="swiper-slide grad-slide">
+                      <div class="grad-block d-flex justify-content-around">
+                        <div class="socials-grad d-flex flex-column">
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/instagram_blue.png" alt="instagram"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/tiktok_blue.png" alt="tiktok"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img class="discord" src="./img/discord-blue.png" alt="discord"></button>
+                          <button class="but-soc-grad d-flex align-items-center facebook"><img src="./img/facebook_blue.png" alt="facebook"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/twitter_blue.png" alt="twitter"></button>
+                          <button class="but-soc-grad d-flex align-items-center"><img src="./img/telegram_blue.png" alt="telegram"></button>
+                        </div>
+                        <div class="text-graduate">
+                          <h2>Кравчук Анастасія</h2>
+                          <p>Посада</p>
+                          <p>Кращий спосіб почати робити – перестати говорити і почати робити.</p>
+                          <button onclick="localStorage.setItem('grad','nastya');window.location.href='graduate-page.html'" id="moreGraduates" class="morebtn-grad lang">Більше</button>
+                        </div>
+                        <img class="grad-img" src="./img/nastya-grad.png" alt="graduate">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+
+              
+              </div>
+            </div>
+          </div>
+          </main> 
+     
+    
+    <footer class="d-flex justify-content-between" id="footer">
+      <div class="d-flex">
+        <div class="mt-4 logo-div">
+          <img class="logo-footer" src="./img/LOGO_footer.png" alt="logo-footer">
+        </div>
+        <div class="d-flex flex-column nav-footer">
+          <div class="d-flex nav-div">
+            <p id="golovna" class="main-footer lang">Головна</p>
+            <a href="#graduate"><p id="graduates" class="footer-text lang">Випускники</p></a>
+            <a href="#student"><p id="students" class="footer-text lang">Студенти</p></a>
+            <a href="#Contacts"><p id="contacts" class="footer-text lang">Контакти</p></a>
+          </div>
+          <button onclick="window.location.href = 'https://goo.gl/maps/2vRPS4F7GqXmL1eR9'" onmouseover="hoverMoreArrowLocation(document.getElementById('location-arrow'),true)" onmouseleave="hoverMoreArrowLocation(document.getElementById('location-arrow'),false)" class="d-flex justify-content-between align-items-center location-but">
+            <p id="locationText" class="location-text lang">Локація</p>
+            <img id="location-arrow" src="./img/location-arrow.png" alt="location-arrow">
+          </button>
+        </div>
+      </div>
+      <div class="soc-div">
+        <div class="socials">
+          <img onclick="window.location.href = 'https://www.instagram.com/intitaedu/'" src="./img/instagram_black.png" alt="instagram-link">
+          <img onclick="window.location.href = 'https://www.facebook.com/intita.it'" src="./img/facebook_black.png" alt="facebook-link">
+          <img onclick="window.location.href = 'https://t.me/IT_Academy_Vinnytsia'" src="./img/telegram_black.png" alt="telegram-link">
+          <img onclick="window.location.href = 'https://twitter.com/INTITA_EDU'" src="./img/twitter_black.png" alt="twitter-link">
+        </div>
+        <div class="d-flex">
+          <div class="d-flex align-items-center justify-content-center mobile-num">
+          <a href="tel:+38 067 431 74 24"><p class="mobileNum-text">+38 067 431 74 24</p></a>
+          </div>
+          <div class="email-div">
+           <a href="mailto:intitavn@gmail.com"><p id="email" class="email-text lang">пошта: intitavn@gmail.com</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script src="https://byjaris.com/code/demo/splide-blur/js/jquery.min.js"></script>
+    <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.min.js"></script>
+    <script src="https://byjaris.com/code/demo/splide-blur/splide/splide.video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
